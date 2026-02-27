@@ -1,5 +1,5 @@
 {% set name = "zencfg" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/zencfg-{{ version }}.tar.gz
-  sha256: fb34f0a182ed62e4cf09ec32bf7b48f5a75b9d9d3d2963fc04a252beb11dbb6d
+  sha256: 937a2aec36332c20579c790200b51e77842bde6659a4a0077a385842d45b8155
 
 build:
   noarch: python
