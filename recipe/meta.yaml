@@ -1,5 +1,6 @@
 {% set name = "zencfg" %}
 {% set version = "1.0.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pydantic
+    - pydantic >=2
 
 test:
   imports:
